@@ -1,0 +1,443 @@
+@import "../node_modules/antd/dist/antd.css";
+@import "./variable.scss";
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+  background-color: $light-orange;
+}
+
+.Homepage {
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  background-color: $off-white;
+
+  li.ant-menu-item.menubar.ant-menu-item-only-child {
+    margin-right: 12rem;
+  }
+  .nav-reservation {
+    background: $light-orange;
+    border: none;
+    color: $white;
+    margin-left: 12rem;
+  }
+
+  .content-blog {
+    background-image: url("https://q-cf.bstatic.com/images/hotel/max1024x768/781/78133943.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 1284px;
+    //  opacity: 0.8;
+    position: relative;
+  }
+  .banner-content {
+    .banner-title {
+      padding-top: 14%;
+      padding-left: 30%;
+      span {
+        font-size: 85px;
+        font-weight: $font-bold;
+        opacity: 1;
+        color: $orange;
+      }
+    }
+  }
+  .check-availablity {
+    h2 {
+      color: $white;
+      opacity: 1;
+      font-weight: $font-bold;
+    }
+    // border: 1px solid red;
+    background: $black;
+    opacity: 0.9;
+    padding: 2%;
+    .ant-row.check {
+      .ant-col {
+        color: $black;
+        background: $off-white;
+        font-weight: $font-bold;
+        padding: 12px;
+        //  border: 1px solid red;
+
+        &.ant-col-3 {
+          margin-right: 45px;
+          padding: 1rem;
+          background: $off-white !important;
+        }
+        &.room {
+          margin-left: 45px;
+        }
+        .travelling-party {
+          text-align: center;
+          .quantity {
+            .qty-count {
+              display: inline-flex;
+              .inc,
+              .dec {
+                float: left;
+                width: 15px;
+                text-align: center;
+                cursor: pointer;
+                display: block;
+                color: $black;
+                font-size: 11px;
+                letter-spacing: 0.4px;
+              }
+              input[type="text"] {
+                width: 4rem;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid $black;
+                text-align: center;
+              }
+            }
+          }
+        }
+        .Go {
+          background: $oranged !important;
+        }
+      }
+    }
+    .react-date-picker__wrapper {
+      border: none;
+    }
+    /*  .react-date-picker__button svg {
+      display: none;
+    } */
+    .react-date-picker__inputGroup {
+      padding: 0.5rem;
+      //background: #f1e5b98a;
+    }
+    button.react-date-picker__clear-button.react-date-picker__button {
+      display: none;
+    }
+    /*  button.react-date-picker__calendar-button.react-date-picker__button {
+      display: none;
+    } */
+  }
+  .intro-section {
+    background: $off-white;
+    padding: 5%;
+    .container {
+      border: 13px solid $light-orange;
+      padding: 3rem;
+      .ant-row.check {
+        .ant-col.ant-col-6 {
+          color: $grey;
+          font-size: 12px;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+      .ant-row.stay {
+        font-size: 2.5rem;
+        font-weight: $font-bold;
+      }
+      .stay-content {
+        margin-top: 1.5rem;
+        .ant-col.ant-col-11 {
+          margin-right: 2.5rem;
+          line-height: 29px;
+          font-size: $normal-font;
+          font-weight: 600;
+          color: $grey;
+          button.ant-btn.ant-btn-primary {
+            padding: 1rem 2rem 2.3rem 2rem;
+            margin-top: 2rem;
+            background: $light-orange;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .facilities {
+    .ant-row {
+      .ant-col.ant-col-12.facilities-left {
+        background-image: url("https://i.ytimg.com/vi/a7eluz7Lag8/maxresdefault.jpg");
+        width: 650px;
+        height: 468px;
+      }
+      p {
+        color: $white;
+        font-size: 48px;
+        font-weight: $font-bold;
+        line-height: 48px;
+        width: 19rem;
+        margin: 4rem auto;
+        span {
+          color: $white;
+          font-weight: $font-bold;
+          margin: auto;
+          font-size: $normal-font;
+          text-transform: uppercase;
+        }
+      }
+      button.ant-btn.reservation {
+        color: $white;
+        background: $black;
+        border: 4px solid $white;
+        opacity: 0.7;
+        padding: 1rem 3rem 2.5rem 3rem;
+        font-weight: 600;
+        margin: 5rem 0rem 0rem 15rem;
+      }
+      .ant-col.ant-col-12.facilities-right {
+        background-image: url("https://2o8db33u301k1mkcdn238l6j-wpengine.netdna-ssl.com/wp-content/uploads/Pumulani-Lodge-pool-700x467.jpg");
+        width: 650px;
+        height: 468px;
+      }
+    }
+    .getdirect-address {
+      margin-top: 5rem;
+      background: $dark-grey;
+      padding: 3rem;
+      font-weight: $font-bold;
+      text-align: center;
+    }
+    .social-icons {
+      img {
+        width: 12rem;
+        margin: 3rem auto;
+      }
+    }
+    .getdirection {
+      .reservation {
+        color: $white;
+        text-align: right;
+      }
+    }
+  }
+  .guest {
+    padding: 3rem;
+    color: $black;
+    p {
+      font-size: 3.5rem;
+      font-weight: $font-bold;
+      line-height: 2rem;
+    }
+    .ant-col.guest-left,
+    .ant-col.guest-right {
+      margin-right: 2rem;
+      .guest-title {
+        font-size: 1.5rem;
+        font-weight: $font-bold;
+        color: $black;
+      }
+      p {
+        margin-right: 2.5rem;
+        line-height: 29px;
+        font-size: $normal-font;
+        font-weight: 600;
+        color: $grey;
+      }
+    }
+
+    .customer {
+      float: left;
+      display: inline-flex;
+      margin-top: 2rem;
+      img {
+        width: 3rem;
+        border-radius: 2rem;
+        margin-right: 1rem;
+      }
+      .cust-name {
+        h3 {
+          color: $oranged;
+          font-weight: $font-bold;
+        }
+      }
+    }
+  }
+  .cust-facilities {
+    padding: 4rem;
+    background: $off-white;
+    .cust-facilities-title {
+      h1 {
+        font-size: 42px;
+        font-weight: $font-bold;
+        text-align: left;
+      }
+      p {
+        margin-right: 2.5rem;
+        line-height: 29px;
+        font-size: $normal-font;
+        font-weight: 600;
+        color: $grey;
+      }
+      &.stay {
+        margin-top: 6rem;
+      }
+      .contact-form {
+        input[type="text"] {
+          height: 56px;
+          border: none;
+          border-bottom: 1px solid $dark-grey;
+          font-size: $normal-font;
+          font-weight: 600;
+          background: transparent;
+          margin-bottom: 20px;
+          margin-right: 2rem;
+          width: 16rem;
+          &:focus {
+            outline: none;
+          }
+        }
+        input.subject {
+          width: 34rem !important;
+          margin-bottom: 130px;
+        }
+        textarea.message {
+          width: 34rem;
+          border: none;
+          border-bottom: 1px solid $dark-grey;
+          font-size: $normal-font;
+          font-weight: 600;
+          /* height: 40px; */
+          resize: none;
+          /* position: relative; */
+          background: transparent;
+          margin-bottom: 50px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+    button {
+      padding: 1rem 2rem 2.3rem 2rem;
+      margin-top: 2rem;
+      background: $light-orange;
+      border: none;
+    }
+    .facilities-img {
+      float: left;
+      display: flex;
+      margin-top: 4rem;
+      img {
+        margin-right: 1rem;
+      }
+    }
+  }
+  footer {
+    background-color: $black;
+    color: $grey;
+    font-weight: 500;
+    // margin-top: 2rem;
+    .ant-layout-footer {
+      padding: 0;
+    }
+  }
+
+  .footer {
+    background-color: $black;
+    //padding: 2rem;
+
+    .ant-col.ant-col-8 {
+      padding: 2rem;
+    }
+    p {
+      font-size: $normal-font;
+      color: $grey;
+      font-weight: 600;
+      line-height: 22px;
+      margin-top: 1rem;
+      text-align: left;
+      margin-left: 3rem;
+      width: 18rem;
+    }
+    span {
+      font-size: $normal-font;
+      color: $grey;
+      font-weight: 600;
+      line-height: 22px;
+    }
+    .newsletter {
+      text-align: left;
+      h5 {
+        color: $light-orange;
+        text-align: left;
+        font-size: 21px;
+        font-weight: $font-bold;
+      }
+      input[type="textbox"] {
+        background: $dark-gray;
+        border: none;
+        padding: 0.5rem;
+        width: 11rem;
+        &::placeholder {
+          color: $white;
+          font-style: italic;
+          font-weight: $font-bold;
+        }
+      }
+      button {
+        padding: 0.5rem 1rem 1.8rem 1rem;
+        background: $light-orange;
+        border: none;
+        color: $white;
+        border-radius: 0;
+        font-weight: $font-bold;
+      }
+      span.address {
+        margin-left: 2rem;
+      }
+    }
+  }
+  .container {
+    padding: 3rem;
+    background: $off-white;
+  }
+  .awards {
+    p.title {
+      font-size: 42px;
+      font-weight: $font-bold;
+      text-align: left;
+      color: $black;
+    }
+    .ant-col {
+      text-align: center;
+      h3 {
+        font-weight: $font-bold;
+        margin-top: 2rem;
+        color: $black;
+      }
+      p {
+        font-size: $normal-font;
+        color: $grey;
+        font-weight: 600;
+        line-height: 22px;
+        width: 21rem;
+        margin: 1rem auto;
+      }
+      span {
+        font-size: 17px;
+        font-weight: $font-bold;
+        line-height: 22px;
+        color: $black;
+      }
+    }
+  }
+  .book-stay {
+    background: $light-orange;
+    padding-left: 4rem;
+    padding-bottom: 4.6rem;
+    span.stay-title {
+      font-size: 40px;
+      font-weight: $font-bold;
+      line-height: 22px;
+      color: $white;
+      margin-left: 4rem;
+    }
+    button.ant-btn.black-reservation {
+      color: $white;
+      background: $black;
+      border: none;
+      float: right;
+      margin-right: 9rem;
+      padding: 1.2rem 2rem 2.5rem 2rem;
+    }
+  }
+}
